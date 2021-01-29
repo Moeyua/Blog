@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://github.com/Moeyua/Moeyua.github.io.git
+url: https://Moeyua.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -98,7 +98,11 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: cupertino
+theme: 
+  cupertino
+
+plugins:
+  hexo-generator-feed
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -115,3 +119,18 @@ backup:
   message: Back up my blog
   repository:
     github: https://github.com/Moeyua/Moeyua.github.io.git,backup
+
+#Feed Atom
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content: true
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
