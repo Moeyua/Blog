@@ -17,9 +17,9 @@ nav:
   items:
     # these items will display as a link
     Archives: /archives
-    Friends: /friends
     Projects: /projects
     About: /about
+    RSS: /atom.xml
     # these will be automatically be an icon
     GitHub: https://github.com/Moeyua
     CodePen: https://codepen.io/Moeyua
